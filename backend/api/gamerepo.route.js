@@ -9,7 +9,7 @@ router.route("/id/:id").get(gamerepoCtrl.apiGetGameById)
 router.route("/publishers").get(gamerepoCtrl.apiGetGameByPublisher)
 
 router
-    .route("/comment")
+    .route("/comments")
     .post(CommentsCtrl.apiPostComment)
     .put(CommentsCtrl.apiUpdateComment)
     .delete(CommentsCtrl.apiDeleteComment)

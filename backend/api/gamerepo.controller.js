@@ -1,6 +1,6 @@
 import gamerepoDAO from "../dao/gamerepoDAO.js";
 
-export default class gamerepoController {
+export default class gamerepoCtrl {
     static async apiGetGames(req, res, next){
         const gamerepoPerPage = req.query.gamerepoPerPage ? parseInt(req.query.gamerepoPerPage, 10) : 20
         const page = req.query.page ? parseInt(req.query.page, 10) : 0

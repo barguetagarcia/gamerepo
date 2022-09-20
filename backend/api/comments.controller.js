@@ -25,7 +25,7 @@ export default class CommentsController {
 
     static async apiUpdateComment(req, res, next) {
         try {
-            const commentId = req.body.comment_id
+            const commentId = req.body.commentId
             const text = req.body.text
             const date = new Date()
 
